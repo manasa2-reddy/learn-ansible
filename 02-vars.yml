@@ -20,14 +20,19 @@
 - name: Task Variables from files
   hosts: localhost
   tasks:
-    - name: print play variable from file
+    - name: print play variable
       vars:
         URL: task.example.com
       ansible.builtin.debug:
         msg: URL = {{ URL }}
   
 
-
+- name: Vars from Inventory
+  hosts: all
+  tasks:
+    - name: print play variable Inventory
+      ansible.builtin.debug:
+        msg: URL = {{ URL }}
 
 
 
