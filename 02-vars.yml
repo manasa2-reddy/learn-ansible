@@ -30,9 +30,9 @@
 - name: Vars from Inventory
   hosts: all
   tasks:
-    - name: print play variable Inventory
+    - name: print play variable from Inventory
       ansible.builtin.debug:
-        msg: "URL = {{ URL }, Hostname of server = {{ ansible_hostname }}"
+        msg: "URL = {{ URL }}, Hostname of server = {{ ansible_hostname }}"
 
 
 
