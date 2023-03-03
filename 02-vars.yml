@@ -50,5 +50,8 @@
        status: "{{ out.rc }}"
        
 
+   - name: print status
+     ansible.builtin.debug:
+       msg: "{{ status }}"
 
        
