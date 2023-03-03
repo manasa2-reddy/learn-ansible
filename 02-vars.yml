@@ -17,7 +17,7 @@
         msg: URL = {{ URL }}
 
 
-- name: Task Variables from files
+- name: Task level Variables
   hosts: localhost
   tasks:
     - name: print play variable
@@ -54,4 +54,5 @@
      ansible.builtin.debug:
        msg: "{{ status }}"
 
-       
+
+   
